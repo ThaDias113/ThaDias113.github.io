@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initi+al-scale=1.0">
+    <title>Curriculo Thamires </title>
+</head>
+
+<body>
+    <header>
+        <selection class="foto para o curriculo">
+            <img src="img/foto para o curriculo.jpg" width="400" height="400" id="foto" />
+        </selection>
+    </header>
+    <center>
+    <hr>
+    <h1>𝑭𝒐𝒓𝒎𝒂çã𝒐 𝒂𝒄𝒂𝒅ê𝒎𝒊𝒄𝒂</h1>
+
+    <section>
+        <p>Ensino fundamental </p>
+        <p>Cursando atualmente o ensino médio integrado ao curso de informática, no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</p>
+    </section>
+    <h1>𝑪𝒐𝒏𝒉𝒆𝒄𝒊𝒎𝒆𝒏𝒕𝒐𝒔 𝒏𝒂 á𝒓𝒆𝒂 𝒅𝒆 𝑰𝒏𝒇𝒐𝒓𝒎á𝒕𝒊𝒄𝒂</h1>
+    <section>
+
+
+        <p>Pacote office</p>
+
+        <p>Linguagem C</p>
+
+        <p>Java</p>
+        <p>Banco de dados</p>
+
+    </section>
+    <h1>𝑶𝒃𝒋𝒆𝒕𝒊𝒗𝒐𝒔</h1>
+    <section>
+        <p>Jovem Aprendiz</p>
+        <p>Conhecimento na área de trabalho</p>
+    </section>
+
+    <section class=" controles">
+        <button id="acender"> Modo Claro</button>
+        <button id="escuro"> Modo Escuro</button>
+    </section>
+
+    <footer>
+        <a href="index.html">Resumo</a>
+        <a href="formacao.html">Formação</a>
+
+    </footer>
+    </hr>
+    </center>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#acender").click(function () {
+            $("body").removeClass("escuro");
+            $("body").addClass("claro");
+        });
+        $("#escuro").click(function () {
+            $("body").removeClass("claro");
+            $("body").addClass("escuro");
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+
+    var foto = document.getElementById("foto");
+    foto.onmouseover = function () {
+        foto.classList.remove("foto_sem_mouse");
+        foto.classList.add("foto_com_mouse");
+    }
+
+    foto.onmouseleave = function () {
+        foto.classList.remove("foto_com_mouse");
+        foto.classList.add("foto_sem_mouse");
+    }
+
+    </script>
+
+</html>
